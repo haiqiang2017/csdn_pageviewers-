@@ -24,7 +24,7 @@ class csdnSpider(object):
         self.clearFile()
         # 循环指定页面提取url
         for i in range(pageNum):
-            html = requests.get("https://blog.csdn.net/Haiqiang1995/article/list/"+str(i+1),headers=self.headers).text # 修改为自己的博客地址
+            html = requests.get("https://blog.csdn.net/your_account/article/list/"+str(i+1),headers=self.headers).text # 修改为自己的博客地址
           #  print html
             #使用bs解析页面
             formats = 'h4 a'
