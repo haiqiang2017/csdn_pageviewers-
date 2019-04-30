@@ -65,7 +65,7 @@ class visitSpider(object):
                     # 打印返回信息
                     print(url,response.status_code,listNum,str(time.localtime().tm_hour) + ":" + str(time.localtime().tm_min))
                     # 访问一次睡一秒
-                    time.sleep(random.choice(range(1,3)))
+                    time.sleep(random.choice(range(8,12)))
                     timeNum += 1
                     listNum += 1
                     # 每访问50次睡30秒
