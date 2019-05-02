@@ -31,7 +31,7 @@ class visitSpider(object):
                 url = i
                 if self.checkClone(url,self.urls):
             #        print("\r读取url:",i)
-                    self.urls.append(i)
+                    self.urls.append(i[:-1])
                     self.nums += 1
 
     def checkClone(self,urls,list):
