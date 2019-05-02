@@ -27,7 +27,8 @@ class visitSpider(object):
         self.nums += 0
         with open("download/column.txt", "r") as f:
             for i in f.readlines():
-                url = i[:-2]
+            #    url = i[:-2]
+                url = i
                 if self.checkClone(url,self.urls):
             #        print("\r读取url:",i)
                     self.urls.append(i[:-2])
